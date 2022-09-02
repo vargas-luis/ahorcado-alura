@@ -1,0 +1,174 @@
+*{
+    background-color: #F3F5FC;
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo{
+    width: 32px;
+    height: 48px;
+    margin: 5%;
+}
+
+main{
+    width: 940px;
+    margin: auto;
+}
+
+.opciones{
+    width: 100%;
+}
+
+.boton{
+    cursor: pointer;
+    /* display: block; */
+    margin: 2em auto;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 16px;
+    transition: 1s all;
+    text-align: center;
+}
+
+.boton:hover{
+    transform: scale(1.1);
+}
+
+#newGame{
+    display: block;
+    width: 317px;
+    height: 114px;
+    background: #0A3871;
+    color: #FFFFFF;
+    font-size: large;
+}
+
+#newWord{
+    display: block;
+    width: 280px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+/* FIN DE ESTILOS PAGINA INICIAL */
+
+
+
+/* ESTILOS PARA INGRESA PALABRA */
+.ingresaPalabra input{
+    border: none;
+    width: 80%;
+    padding: 24px;
+    font-size: larger;
+    color: #0A3871;
+    margin-bottom: 5em;
+}
+
+.ingresaPalabra input:focus{
+    outline: none;
+}
+
+#guardary{
+    width: 332px;
+    height: 67px;
+    background: #0A3871;
+    margin-left: 5em;
+}
+
+#cancelar{
+    width: 332px;
+    height: 67px;
+    margin-left: 5em;
+}
+/* FIN DE ESTILOS PARA INGRESA PALABA */
+
+
+
+/* SECCIONES A DESAPARECER */
+.inicio{
+    display: contents;
+}
+
+.thegame{
+    display: none;
+}
+
+.nuevaPalabra{
+    display: none;
+}
+/* FIN DE SECCIONES A DESAPARECER */
+
+
+
+/* EL MAIN */
+.palabraAdivinar input{
+    display: block;
+    font-size: 32px;
+    border: 1px solid red;
+}
+
+.palabraAdivinar input:focus{
+    outline: none;
+}
+
+.palabraAdivinar p{
+    font-size: 24px;
+    margin: 1em 0 0 0;
+}
+
+
+
+
+/* FOOTER */
+.pie{
+    position: relative;
+    text-align: center;
+    margin: 8%;
+    color: #0A3871;
+    font-family: 'Poppins';
+}
+
+
+/* .abc{
+    width: auto;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+} */
+
+
+
+/* DISEÑO RESPONSIVO PARA RESOLUCIONES MENORES A 480px */
+@media screen and (max-width:480px) {
+    main, footer, .opciones{
+        width: 100%;
+    }    
+    
+    .opciones{
+        margin-top: 40%;
+    }
+    
+    .boton{
+        display: block;
+    }
+
+    #guardary, #cancelar{
+        margin: 1em auto;
+    }
+}
+
+@media screen and (max-width:800px) {
+    main, footer, .opciones{
+        width: 100%;
+    }    
+    
+    .opciones{
+        margin-top: 30%;
+    }
+
+    .boton{
+        display: block;
+    }
+
+    #guardary, #cancelar{
+        margin: 1em auto;
+    }
+}
