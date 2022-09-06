@@ -12,6 +12,7 @@
 main{
     width: 940px;
     margin: auto;
+    /* border: 1px solid red; */
 }
 
 .opciones{
@@ -101,9 +102,16 @@ main{
 
 /* EL MAIN */
 .palabraAdivinar input{
-    display: block;
+    display: inline-block;
+    text-align: center;
     font-size: 32px;
-    border: 1px solid red;
+    border: none;
+}
+
+#guessletter{
+    outline: 1px dotted #0A3871;
+    width: 50px;
+    margin-left: 20%;
 }
 
 .palabraAdivinar input:focus{
@@ -113,28 +121,31 @@ main{
 .palabraAdivinar p{
     font-size: 24px;
     margin: 1em 0 0 0;
+    text-align: center;
 }
 
 
+.patibulo{
+    margin: 10px auto;
+    padding: 10px;
+    /* border: 1px solid greenyellow; */
+    width: 600px;
+    height: 400px;
+    /* display: contents;
+    visibility:visible; */
+}
 
 
 /* FOOTER */
 .pie{
-    position: relative;
+    display: block;
+    /* position: relative; */
     text-align: center;
-    margin: 8%;
+    margin: 5%;
+    margin-bottom: 0;
     color: #0A3871;
     font-family: 'Poppins';
 }
-
-
-/* .abc{
-    width: auto;
-    border: 1px solid #0A3871;
-    cursor: pointer;
-} */
-
-
 
 /* DISEÑO RESPONSIVO PARA RESOLUCIONES MENORES A 480px */
 @media screen and (max-width:480px) {
@@ -153,6 +164,11 @@ main{
     #guardary, #cancelar{
         margin: 1em auto;
     }
+
+    .patibulo canvas{
+        width: 85%;
+    }
+
 }
 
 @media screen and (max-width:800px) {
@@ -171,4 +187,9 @@ main{
     #guardary, #cancelar{
         margin: 1em auto;
     }
+
+    .patibulo canvas{
+        width: 85%;
+    }
+
 }

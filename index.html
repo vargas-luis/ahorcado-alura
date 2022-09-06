@@ -27,15 +27,18 @@
         </section>
 
         <section class="thegame" id="thegame">
+            <div class="patibulo">
+                <canvas width="600" height="400" id="patibulo"></canvas>
+            </div>
             <form class="palabraAdivinar">
-                <input type="text" id="guessletter" placeholder="Ingresa letra" onkeydown="verificar(event)">
                 <input type="text" id="underlines">
-                <p>LETRAS REPETIDAS: </p>
+                <input type="text" id="guessletter" onkeydown="verificar(event)">
+                <p>LETRAS REPETIDAS:</p>
                 <input type="text" id="repetidas">
             </form>
     
             <div class="opciones" id="inicio">
-                <button class="boton" id="guardary" onclick="newGame()">Nuevo Juego</a></button>
+                <button class="boton" id="guardary" onclick="palabraAzar()">Nueva Palabra</a></button>
                 <button class="boton" id="cancelar" onclick="resetear()">Rendirse</a></button>
             </div>
 

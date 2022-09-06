@@ -15,26 +15,22 @@
 <body>
     
     <header>
-        <img src="/img/logo.svg" alt="logo_alura" id="logo">
+        <img src="/img/logo.svg" alt="logo_alura" id="logo" onclick="patibulo()">
     </header>
     
     <main>
-        <form>
-            <input type="text" id="guess-word">
-        </form>
-
-        <div class="opciones">
-            <button class="boton" id="guardary" onclick="game()">Nuevo Juego</a></button>
-            <!-- <button class="boton" id="guardary" onclick="escogerPalabra()">Nuevo Juego</a></button> -->
-            <button class="boton" id="cancelar" onclick="resetear()">Rendirse</a></button>
+        <div class="patibulo">
+            <canvas width="600" height="400" id="patibulo"></canvas>
         </div>
-       
+        <div class="opciones">
+            <button class="boton" id="guardary" onclick="agregarPalabra()">Guardar y empezar</a></button>
+            <button class="boton" id="cancelar" onclick="resetear()">Cancelar</a></button>
+        </div>
     </main>
 
     <footer>
         <div class="pie">
             <a href="https://github.com/vargas-luis"><img src="/img/github/git.png" alt="GitHub"></a>
-            <!-- <a href="https://github.com/vargas-luis"><p>Luis Vargas</p></a> -->
         </div>
     </footer>
     

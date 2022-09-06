@@ -10,3 +10,9 @@ en el momento correcto.
 <br><br>
 Si quieres darle una prueba <a href="https://vargas-luis.github.io/ahorcado-alura/">click aqui.</a>
 </div>
+
+### Septiembre 06
+- Juego completado
+- Bugs menores, p.e. cuando se pierde el juego y se siguen presionando teclas arroja imagen de victoria
+- Falta completar teclado responsivo
+- Falta agregar función para agregar palabras
