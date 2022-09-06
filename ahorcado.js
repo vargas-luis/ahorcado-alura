@@ -129,7 +129,7 @@ function checkWin(cadena){
 
 ////////////////////////////////////////////////////////////////////// REGRESA A INDEX (INICIO)
 function resetear(){
-    window.open("/index.html", "_self");
+    window.open("./index.html", "_self");
 }
 
 
