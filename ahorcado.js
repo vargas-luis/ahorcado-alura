@@ -150,46 +150,46 @@ function patibulo(errores){
     
     switch (errores) {
         case 1:
-            img.src = "/img/mono/1.png";
+            img.src = "./img/mono/1.png";
             dibujarParte(pincel,img,10,390);
             break;
         case 2:
-            img.src = "/img/mono/2.png";
+            img.src = "./img/mono/2.png";
             dibujarParte(pincel,img,155,35);
             break;
         case 3:
-            img.src = "/img/mono/3.png";
+            img.src = "./img/mono/3.png";
             dibujarParte(pincel,img,155,35);
             break;
         case 4:
-            img.src = "/img/mono/4.png";
+            img.src = "./img/mono/4.png";
             dibujarParte(pincel,img,330,35);
             break;
         case 5:
-            img.src = "/img/mono/5.png";
+            img.src = "./img/mono/5.png";
             dibujarParte(pincel,img,302,80);
             break;
         case 6:
-            img.src = "/img/mono/6.png";
+            img.src = "./img/mono/6.png";
             dibujarParte(pincel,img,330,140);
             break;
         case 7:
-            img.src = "/img/mono/7.png";
+            img.src = "./img/mono/7.png";
             dibujarParte(pincel,img,332,150);
             break;
         case 8:
-            img.src = "/img/mono/8.png";
+            img.src = "./img/mono/8.png";
             dibujarParte(pincel,img,295,150);
             break;
         case 9:
-            img.src = "/img/mono/9.png";
+            img.src = "./img/mono/9.png";
             dibujarParte(pincel,img,295,270);
             break;
         case 10:
-            img.src = "/img/mono/10.png";
+            img.src = "./img/mono/10.png";
             dibujarParte(pincel,img,332,270);
             aCadena(palabra);
-            img.src = "/img/lose.png";
+            img.src = "./img/lose.png";
             dibujarParte(pincel,img,150,100);
             break;
 
@@ -199,7 +199,7 @@ function patibulo(errores){
             break;
         
         case 12:
-            img.src= "/img/win.png";
+            img.src= "./img/win.png";
             dibujarParte(pincel, img,150,100);
             break;
     
