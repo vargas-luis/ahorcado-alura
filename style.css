@@ -110,7 +110,7 @@ main{
 }
 
 #guessletter{
-    outline: 1px dotted #0A3871;
+    outline: none;
     width: 50px;
     margin-left: 20%;
 }
@@ -123,6 +123,17 @@ main{
     font-size: 24px;
     margin: 1em 0 0 0;
     text-align: center;
+}
+
+#caja-nuevaPalabra{
+    font-size: 32px;
+    margin: 10px;
+    padding: 20px;
+    border: none;
+}
+
+#caja-nuevaPalabra:focus{
+    outline: none;
 }
 
 
@@ -146,6 +157,12 @@ main{
     margin-bottom: 0;
     color: #0A3871;
     font-family: 'Poppins';
+}
+
+.pie p{
+    font-size: smaller;
+    /* margin-top: 1em; */
+    padding-top: 1em;
 }
 
 /* DISEÑO RESPONSIVO PARA RESOLUCIONES MENORES A 480px */

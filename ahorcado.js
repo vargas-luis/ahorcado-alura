@@ -2,7 +2,7 @@ let diccionario =  ['JARRA','VASO','PLATO','CUCHARA','TENEDOR','REGLA','LAPIZ','
                     'PANTALON','PINCEL','OLLA','PAPEL','CARPETA','CUADERNO','LIBRO','CELULAR','TELEFONO','LIBRETA','TIJERA',
                     'AGUJA','HILO','BROCHE','JABON','MARTILLO','ESCOBA','CLAVO'];
 // let diccionario=['UNO','DOS'];
-let nuevasPalabras=[];
+// let nuevasPalabras=[];
 var repetidasLetras=[];
 var letrasRepetidas=[];
 var incognita;
@@ -12,8 +12,9 @@ let errores;
 
 ////////////////////////////////////////////////////////////////////// QUITA LOS ELEMENTOS NO NECESARIOS
 function desaparecer(){
-    document.getElementById('inicio').style.display="none";
-    document.getElementById('pie').style.display="none";
+        document.getElementById('pie').style.display="none";
+        document.getElementById('inicio').style.display="none";
+        document.getElementById('nuevaPalabra').style.display="none";
 }
 
 
@@ -21,10 +22,9 @@ function desaparecer(){
 function newGame() {
         
     desaparecer();
-    // errores=1;
-    // document.getElementById('guessletter').focus();
     document.getElementById('thegame').style.display="contents";
     document.getElementById('guessletter').value="";
+    document.getElementById('underlines').value="";
     palabraAzar();
 }
 
@@ -77,18 +77,28 @@ function reemplazar(mensaje, nuevo) {
 function verificar(event){    
     let key = event.key;
     key = key.toUpperCase();
+    let valorLetra=event.which;
 
-    document.getElementById('guessletter').value="";
-    document.getElementById('guessletter').focus();    
+    if (valorLetra >= 65 && valorLetra <= 90){
+        document.getElementById('guessletter').focus();  
+        document.getElementById('guessletter').value=" ";
 
-    if(palabra.includes(key)){
-        reemplazar(key,null);
+        if(palabra.includes(key)){
+            reemplazar(key,null);
+        }
+        else{
+            repetidas(key);
+            patibulo(errores);
+            errores+=1;
+        }
     }
     else{
-        repetidas(key);
-        patibulo(errores);
-        errores+=1;
+        alert('SOLO LETRAS');
+        document.getElementById('guessletter').focus(); 
+        document.getElementById('guessletter').value=" ";
     }
+
+    
 
 }
 
@@ -129,14 +139,21 @@ function checkWin(cadena){
 
 ////////////////////////////////////////////////////////////////////// REGRESA A INDEX (INICIO)
 function resetear(){
-    window.open("https://vargas-luis.github.io/index.html", "_self");
+    window.open("index.html", "_self");
 }
 
 
 ////////////////////////////////////////////////////////////////////// AGREGA PALABRAS AL DICCIONARIO
-function agregarPalabra(){
-    palabra=document.getElementById('palabraNueva').value;
-    nuevasPalabras[nuevasPalabras.length]=palabra.toUpperCase();
+function newWord(){
+    desaparecer();
+    document.getElementById('thegame').style.display="none";
+    document.getElementById('nuevaPalabra').style.display="contents";
+}
+
+function nuevaPalabra(){
+    var palabra=document.getElementById('caja-nuevaPalabra').value;
+    diccionario[(diccionario.length)]=palabra.toUpperCase();
+    newGame();
 }
 
 

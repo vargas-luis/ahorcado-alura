@@ -46,15 +46,20 @@
         </section>
 
         <section class="nuevaPalabra" id="nuevaPalabra">
-                <p>Nada por el momento</p>
+                <input type="text" placeholder="Ingrese una palabra" id="caja-nuevaPalabra" onkeypress="return(event.charCode == 32 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 122))">
+                
+                <div class="opciones" id="inicio">
+                    <button class="boton" id="guardary" onclick="nuevaPalabra()">Guardar y empezar</button>
+                    <button class="boton" id="cancelar" onclick="resetear()">Cancelar</button>
+                </div>
         </section>
 
     </main>    
 
     <footer>
         <div class="pie" id="pie">
-            <a href="https://github.com/vargas-luis"><img src="./img/github/git.png" alt="GitHub"></a>
-            <!-- <a href="https://github.com/vargas-luis"><p>Luis Vargas</p></a> -->
+            <a href="https://github.com/vargas-luis/ahorcado-alura"><img src="./img/github/git.png" alt="GitHub"></a>
+            <p>Luis Vargas&copy</p>
         </div>
     </footer>
 </body>

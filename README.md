@@ -16,3 +16,8 @@ Si quieres darle una prueba <a href="https://vargas-luis.github.io/ahorcado-alur
 - Bugs menores, p.e. cuando se pierde el juego y se siguen presionando teclas arroja imagen de victoria
 - Falta completar teclado responsivo
 - Falta agregar función para agregar palabras
+
+### Septiembre 07
+- Se pueden agregar nuevas palabras
+- Se añade la validación para introducir sólo letras
+- Se eliminan del repo archivos inútiles
