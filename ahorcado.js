@@ -77,7 +77,7 @@ function reemplazar(mensaje, nuevo) {
 function verificar(event){    
     let key = event.key;
     key = key.toUpperCase();
-    let valorLetra=event.which;
+    let valorLetra=key.charCodeAt(0);
 
     if (valorLetra >= 65 && valorLetra <= 90){
         document.getElementById('guessletter').focus();  
@@ -98,6 +98,30 @@ function verificar(event){
         document.getElementById('guessletter').value=" ";
     }
 }
+// function verificar(event){    
+//     let key = event.key;
+//     key = key.toUpperCase();
+//     let valorLetra=event.which;
+
+//     if (valorLetra >= 65 && valorLetra <= 90){
+//         document.getElementById('guessletter').focus();  
+//         document.getElementById('guessletter').value=" ";
+
+//         if(palabra.includes(key)){
+//             reemplazar(key,null);
+//         }
+//         else{
+//             repetidas(key);
+//             patibulo(errores);
+//             errores+=1;
+//         }
+//     }
+//     else{
+//         alert('SOLO LETRAS');
+//         document.getElementById('guessletter').focus(); 
+//         document.getElementById('guessletter').value=" ";
+//     }
+// }
 
 ////////////////////////////////////////////////////////////////////// VERIFICA E IMPRIME LETRAS REPETIDAS
 function repetidas(key){
