@@ -74,10 +74,11 @@ function reemplazar(mensaje, nuevo) {
 
 
 ///////////////////////////////// VERIFICA SI SE ENCONTRÓ LA PALABRA Y/O ENVIA PARA CHECAR LAS LETRAS
+
 function verificar(event){    
     let key = event.key;
     key = key.toUpperCase();
-    let valorLetra=key.charCodeAt(0);
+    let valorLetra = key.charCodeAt(0)
 
     if (valorLetra >= 65 && valorLetra <= 90){
         document.getElementById('guessletter').focus();  
