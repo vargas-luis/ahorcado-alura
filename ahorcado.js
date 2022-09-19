@@ -78,11 +78,7 @@ function reemplazar(mensaje, nuevo) {
 function verificar(event){    
     let key = event.key;
     key = key.toUpperCase();
-    let valorLetra = key.charCodeAt(0)
-
-    if (valorLetra >= 65 && valorLetra <= 90){
-        document.getElementById('guessletter').focus();  
-        document.getElementById('guessletter').value=" ";
+    document.getElementById('guessletter').value=" ";
 
         if(palabra.includes(key)){
             reemplazar(key,null);
@@ -93,12 +89,7 @@ function verificar(event){
             errores+=1;
         }
     }
-    else{
-        alert('SOLO LETRAS');
-        document.getElementById('guessletter').focus(); 
-        document.getElementById('guessletter').value=" ";
-    }
-}
+
 // function verificar(event){    
 //     let key = event.key;
 //     key = key.toUpperCase();
