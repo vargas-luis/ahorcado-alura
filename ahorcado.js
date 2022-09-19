@@ -97,9 +97,6 @@ function verificar(event){
         document.getElementById('guessletter').focus(); 
         document.getElementById('guessletter').value=" ";
     }
-
-    
-
 }
 
 ////////////////////////////////////////////////////////////////////// VERIFICA E IMPRIME LETRAS REPETIDAS
